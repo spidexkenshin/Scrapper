@@ -1,0 +1,16 @@
+{
+  "name": "KenshinAnimeBot",
+  "description": "Anime upload & management Telegram bot",
+  "keywords": ["telegram","bot","anime"],
+  "env": {
+    "API_ID":           {"description": "Telegram API ID"},
+    "API_HASH":         {"description": "Telegram API Hash"},
+    "BOT_TOKEN":        {"description": "Bot token from @BotFather"},
+    "ADMIN_IDS":        {"description": "Comma-separated admin user IDs"},
+    "MONGO_URI":        {"description": "MongoDB connection string"},
+    "STORAGE_GROUP_ID": {"description": "Private storage group ID"},
+    "DELETE_AFTER":     {"description": "Seconds before file delete", "value": "10"},
+    "FILE_PREFIX":      {"description": "File rename prefix", "value": "@KENSHIN_ANIME"}
+  },
+  "formation": {"worker": {"quantity": 1, "size": "basic"}}
+}
